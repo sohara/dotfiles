@@ -1,0 +1,7 @@
+" .local file for vimrc customizations, on top of thoughtbot dotfiles
+
+" set 256 colours support
+set t_Co=256
+
+" Use preferred colour scheme
+colorscheme jellybeans
