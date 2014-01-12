@@ -15,9 +15,6 @@ map <leader>e :edit %%
 map <leader>v :view %%
 
 " Use powerline
-" python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages/")
-" python from powerline.ext.vim import source_plugin;
-" source /usr
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
