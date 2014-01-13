@@ -7,3 +7,8 @@ eval "$(rbenv init -)"
 
 # Use powerline for zsh
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# Use 256 color support (not sure why this isn't enable by thoughtbot)
+
+export TERM=xterm-256color
+[ -n "$TMUX" ] && export TERM=screen-256color
