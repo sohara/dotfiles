@@ -1,1 +1,2 @@
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'tpope/vim-ragtag'

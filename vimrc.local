@@ -40,3 +40,10 @@ set hlsearch
 
 " Map leader h to clear highlighted search matches
 map <leader>h :nohlsearch <CR>
+
+" Let tim pope's ragtag plugin do its stuff 
+" (ctrl+x =) to insert loud erb tags for example
+inoremap <M-o>       <Esc>o
+inoremap <C-j>       <Down>
+let g:ragtag_global_maps = 1
+
