@@ -34,3 +34,9 @@ endif
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
+
+" Keep all search matches hightlighted
+set hlsearch 
+
+" Map leader h to clear highlighted search matches
+map <leader>h :nohlsearch <CR>
