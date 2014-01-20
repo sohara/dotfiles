@@ -14,11 +14,12 @@
   pr = !hub pull-request
   st = status
   up = !git fetch origin && git rebase origin/master
+  integrate = "!test \"$(git merge-base HEAD \"$1\")\" = \"$(git rev-parse HEAD)\" && git merge --no-ff --edit $1 || echo >&2 \"Not up-to-date; refusing to merge, rebase first!\""
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
 [merge]
-  ff = only
+  # ff = only
 [include]
   path = .gitconfig.local
 [commit]
