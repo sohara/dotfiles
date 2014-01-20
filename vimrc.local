@@ -63,6 +63,8 @@ map <leader>h :nohlsearch <CR>
 let g:ragtag_global_maps = 1
 " set timeout timeoutlen=5000 ttimeoutlen=100
 
+" Spree deface files are html
+au BufRead,BufNewFile *.{deface} set ft=eruby
 
 " Set vim to always remove trailing whitespace in ruby files 
 " and javascript files.... and others
@@ -74,3 +76,4 @@ autocmd BufWritePre *.ino :%s/\s\+$//e
 autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
 autocmd BufWritePre *.txt :%s/\s\+$//e
+autocmd BufWritePre *.deface :%s/\s\+$//e
