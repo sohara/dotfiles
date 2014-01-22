@@ -77,3 +77,14 @@ autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
 autocmd BufWritePre *.txt :%s/\s\+$//e
 autocmd BufWritePre *.deface :%s/\s\+$//e
+
+" Mappings for thoughtbot's vim-rspec plugin
+" (similar or based on Gary Bernhardts scripts
+" See https://github.com/thoughtbot/vim-rspec
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+" Run the specs via zeus
+let g:rspec_command = '!zeus rspec {spec}'
