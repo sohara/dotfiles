@@ -1,6 +1,9 @@
 # Make sure Cellar is near front of PATH
 export PATH=/usr/local/bin:/usr/bin:/usr/sbin:/sbin:$PATH
 
+# Get npm binaries into PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+
 # Set up rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
