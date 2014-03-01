@@ -4,7 +4,9 @@
 set t_Co=256
 
 " Use preferred colour scheme
-colorscheme jellybeans
+" Use :set background=light for light version of solarized
+set background=dark
+colorscheme solarized
 
 " Set mapleader
 let mapleader = ","
@@ -65,6 +67,9 @@ let g:ragtag_global_maps = 1
 
 " Spree deface files are html
 au BufRead,BufNewFile *.{deface} set ft=eruby
+
+" es6 files are javascript
+au BufNewFile,BufRead *.es6 set filetype=javascript
 
 " Set vim to always remove trailing whitespace in ruby files 
 " and javascript files.... and others
