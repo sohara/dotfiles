@@ -52,6 +52,19 @@ python del powerline_setup
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
+" Write/save files from Insert mode
+" *** The Two Hand system ***
+" <Cr> signifies the "return" key
+inoremap ;a <Esc>
+inoremap ;d <Esc>:update<Cr>
+inoremap ;f <C-O>:update<Cr>
+nnoremap ;f :update<CR>
+
+" *** The Right Hand system ***
+inoremap ;l <Esc>
+inoremap ;k <Esc>:update<Cr>
+inoremap ;j <C-O>:update<Cr>
+nnoremap ;j :update<CR>
 " Keep all search matches hightlighted
 set hlsearch 
 set ignorecase
