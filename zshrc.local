@@ -6,7 +6,7 @@ export PATH=/usr/local/share/npm/bin:$PATH
 
 # Set up rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+hash gdate 2>/dev/null && eval "$(rbenv init -)"
 
 # Use 256 color support (not sure why this isn't enable by thoughtbot)
 
