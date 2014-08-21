@@ -93,8 +93,10 @@ autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.ino :%s/\s\+$//e
 autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
+autocmd BufWritePre *.less :%s/\s\+$//e
 autocmd BufWritePre *.txt :%s/\s\+$//e
 autocmd BufWritePre *.deface :%s/\s\+$//e
+autocmd BufWritePre *.hbs :%s/\s\+$//e
 
 " Mappings for thoughtbot's vim-rspec plugin
 " (similar or based on Gary Bernhardts scripts
