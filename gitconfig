@@ -24,3 +24,5 @@
   path = .gitconfig.local
 [commit]
   template = ~/.gitmessage
+[url "https://"]
+	insteadOf = git://
