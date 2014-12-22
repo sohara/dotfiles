@@ -45,3 +45,7 @@ alias bundle='nocorrect bundle'
 
 export SAUCE_USERNAME=copilot-app-team
 export SAUCE_ACCESS_KEY=1167bcae-b02d-41f8-941c-fedf21b3cf4b
+
+# Custom word movements on the command line (go forward and backwards one word)
+bindkey "^F" forward-word
+bindkey "^B" backward-word
