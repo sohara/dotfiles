@@ -34,9 +34,9 @@ inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
 
 " Use powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
 
 " " Exit insert mode more quickly while using powerline
 " " Disabling this for now becuase it conflicts with ragtag plugin
