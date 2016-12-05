@@ -7,6 +7,7 @@ set t_Co=256
 " Use :set background=light for light version of solarized
 set background=dark
 colorscheme solarized
+" colorscheme nova
 
 " Set mapleader
 let mapleader = ","
@@ -34,9 +35,9 @@ inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
 
 " Use powerline
-" python from powerline.vim import setup as powerline_setup
-" python powerline_setup()
-" python del powerline_setup
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 
 " " Exit insert mode more quickly while using powerline
 " " Disabling this for now becuase it conflicts with ragtag plugin
@@ -97,6 +98,8 @@ autocmd BufWritePre *.less :%s/\s\+$//e
 autocmd BufWritePre *.txt :%s/\s\+$//e
 autocmd BufWritePre *.deface :%s/\s\+$//e
 autocmd BufWritePre *.hbs :%s/\s\+$//e
+autocmd BufWritePre *.md :%s/\s\+$//e
+autocmd BufWritePre *.markdown :%s/\s\+$//e
 
 " Mappings for thoughtbot's vim-rspec plugin
 " (similar or based on Gary Bernhardts scripts
@@ -108,3 +111,17 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 " Run the specs via zeus
 let g:rspec_command = '!zeus rspec {spec}'
+
+" NETRW (Nerd tree like file browser)
+
+" Set an absolute width for netrw window
+let g:netrw_winsize = -28
+
+" Set file list style to 'tree' in Explore mode
+let g:netrw_liststyle=3
+
+" sort is affecting only: directories on the top, files below
+let g:netrw_sort_sequence = '[\/]$,*'
+
+" use the previous window to open file
+let g:netrw_browse_split = 4

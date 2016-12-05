@@ -1,2 +1,2 @@
 # Various aliases
-alias vpn="~/bin/conde-vpn.py"
+alias vpn="/usr/bin/python ~/bin/conde-vpn.py"
