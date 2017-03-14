@@ -3,3 +3,4 @@
   email = sohara@sohara.com
 [alias]
   current = rev-parse --abbrev-ref HEAD
+  mff = merge --ff-only

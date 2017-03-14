@@ -63,3 +63,6 @@ export PATH=".git/safe/../../bin:$PATH"
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+export NVM_DIR="/Users/sohara/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

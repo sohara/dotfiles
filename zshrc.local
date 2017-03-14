@@ -4,6 +4,9 @@ export PATH=/usr/local/bin:/usr/bin:/usr/sbin:/sbin:$PATH
 # Add ~/bin to PATH
 export PATH=~/bin:$PATH
 
+# Add rust tools in ~/.cargo/bin to PATH
+export PATH=~/.cargo/bin:$PATH
+
 # Get npm binaries into PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 
@@ -11,8 +14,8 @@ export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/Users/sohara/Library/Python/2.7/bin:$PATH
 
 # Set up rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 # Use 256 color support (not sure why this isn't enable by thoughtbot)
 
@@ -48,6 +51,9 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # Don't try to auto correct commands preceded by 'bundle'
 alias bundle='nocorrect bundle'
+
+# Clear all caches, etc. in an ember-cli project
+alias nomnom='rm -rf node_modules bower_components tmp && npm i && bower i'
 
 export SAUCE_USERNAME=copilot-app-team
 export SAUCE_ACCESS_KEY=1167bcae-b02d-41f8-941c-fedf21b3cf4b
