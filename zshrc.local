@@ -70,3 +70,6 @@ source $(brew --prefix nvm)/nvm.sh
 # ulimit -u 2048
 
 # export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
+
+# Refresh dependencies for ember-cli
+alias nomnom='rm -rf node_modules bower_components tmp && npm i && bower i'
