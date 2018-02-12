@@ -11,7 +11,7 @@ export PATH=~/.cargo/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 
 # Add python bin dir to $PATH
-export PATH=/Users/sohara/Library/Python/2.7/bin:$PATH
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 # Set up rbenv
 # export PATH="$HOME/.rbenv/bin:$PATH"
@@ -61,9 +61,6 @@ export SAUCE_ACCESS_KEY=1167bcae-b02d-41f8-941c-fedf21b3cf4b
 # Custom word movements on the command line (go forward and backwards one word)
 bindkey "^F" forward-word
 bindkey "^B" backward-word
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 # Add SSL Cert Path for ruby
 # ulimit -n 65536

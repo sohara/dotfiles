@@ -26,3 +26,6 @@
   template = ~/.gitmessage
 [url "https://"]
 	insteadOf = git://
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3

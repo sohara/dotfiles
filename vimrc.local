@@ -91,6 +91,7 @@ autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre *.erb :%s/\s\+$//e
 autocmd BufWritePre *.rake :%s/\s\+$//e
 autocmd BufWritePre *.js :%s/\s\+$//e
+autocmd BufWritePre *.ts :%s/\s\+$//e
 autocmd BufWritePre *.ino :%s/\s\+$//e
 autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
